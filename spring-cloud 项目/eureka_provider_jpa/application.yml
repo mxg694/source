@@ -1,0 +1,22 @@
+server:
+  port: 28081
+spring:
+  application:
+    name: clode-provide
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://118.190.56.129:3306/test?useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: Mm123456,
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:20000/eureka
+  instance:
+    lease-renewal-interval-in-seconds: 5
+    lease-expiration-duration-in-seconds: 15
